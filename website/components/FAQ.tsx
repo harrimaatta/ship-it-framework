@@ -28,6 +28,17 @@ const faqCopy = {
       question: "Is this a process?",
       answer: ["Yes.", "A very small one."],
     },
+    {
+      question: "What is this based on? Is there some science behind this idea?",
+      answer: [
+        "No. There isn't any science behind this, or at least none that I am aware of.",
+        "And if research argues against the Ship It! idea, then that research is wrong.",
+      ],
+    },
+    {
+      question: "I want to contact you.",
+      answer: ["Mail to captain <at> shipitframe.work."],
+    },
   ],
 };
 
