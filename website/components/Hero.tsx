@@ -1,3 +1,5 @@
+import BrandMark from "@/components/BrandMark";
+
 const heroCopy = {
   title: "Ship It!",
   subtitle: "The minimal software delivery framework.",
@@ -35,20 +37,29 @@ function HeroMotto({ words }: { words: string[] }) {
 export default function Hero() {
   return (
     <SectionContainer>
-      <TextStack>
-        <div className="space-y-6">
-          <h1
-            id="hero-title"
-            className="text-6xl font-semibold leading-none text-zinc-50 sm:text-7xl lg:text-8xl"
-          >
-            {heroCopy.title}
-          </h1>
-          <p className="max-w-2xl text-2xl leading-snug text-zinc-300 sm:text-3xl">
-            {heroCopy.subtitle}
-          </p>
+      <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)]">
+        <div className="flex justify-center lg:justify-start">
+          <BrandMark
+            width={180}
+            height={180}
+            className="h-40 w-40 sm:h-56 sm:w-56 lg:h-72 lg:w-72"
+          />
         </div>
-        <HeroMotto words={heroCopy.motto} />
-      </TextStack>
+        <TextStack>
+          <div className="space-y-6">
+            <h1
+              id="hero-title"
+              className="text-6xl font-semibold leading-none text-zinc-50 sm:text-7xl lg:text-8xl"
+            >
+              {heroCopy.title}
+            </h1>
+            <p className="max-w-2xl text-2xl leading-snug text-zinc-300 sm:text-3xl">
+              {heroCopy.subtitle}
+            </p>
+          </div>
+          <HeroMotto words={heroCopy.motto} />
+        </TextStack>
+      </div>
     </SectionContainer>
   );
 }
