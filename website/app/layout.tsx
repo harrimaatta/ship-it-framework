@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Ship It! | The Minimal Software Delivery Framework",
   description:
     "Build. Validate. Ship. A minimal software delivery framework created by developers, for developers.",
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png" }],
+  },
 
   openGraph: {
     title: "Ship It!",
