@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Build. Validate. Ship. A minimal software delivery framework created by developers, for developers.",
   icons: {
-    icon: [{ url: "/icon.png", type: "image/png" }],
+    icon: [{ url: "/brand/shipit-icon.png", type: "image/png" }],
   },
 
   openGraph: {

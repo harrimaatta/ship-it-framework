@@ -1,3 +1,5 @@
+import BrandMark from "@/components/BrandMark";
+
 const heroCopy = {
   title: "Ship It!",
   subtitle: "The minimal software delivery framework.",
@@ -37,12 +39,15 @@ export default function Hero() {
     <SectionContainer>
       <TextStack>
         <div className="space-y-6">
-          <h1
-            id="hero-title"
-            className="text-6xl font-semibold leading-none text-zinc-50 sm:text-7xl lg:text-8xl"
-          >
-            {heroCopy.title}
-          </h1>
+          <div className="flex items-center gap-4">
+            <BrandMark className="h-12 w-12 rounded-xl sm:h-14 sm:w-14" />
+            <h1
+              id="hero-title"
+              className="text-6xl font-semibold leading-none text-zinc-50 sm:text-7xl lg:text-8xl"
+            >
+              {heroCopy.title}
+            </h1>
+          </div>
           <p className="max-w-2xl text-2xl leading-snug text-zinc-300 sm:text-3xl">
             {heroCopy.subtitle}
           </p>
